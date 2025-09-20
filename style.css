@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fdfbf6; /* beige inspiré du logo */
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(5.5px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+header img {
+  height: 60px;
+}
+
+/* --- HERO (Accueil) --- */
+.hero {
+  background: #fff3e6; /* beige clair rosé */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 77.5vh;
+  padding: 80px 20px 50px; /* ↑ plus de marge en haut */
+  border-bottom: 3px solid #f5d0b5;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-logo {
+  width: 300px;
+  margin-bottom: 2px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 10px 0 20px;
+  color: #d94c3f;
+}
+
+.hero .intro {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 20px 0;
+  color: #444;
+}
+
+.hero .btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #d94c3f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #b93a30;
+}
+
+/* --- Sélecteur langues --- */
+.lang-select {
+  position: relative;
+}
+
+.lang-select button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.lang-select button img {
+  width: 20px;
+  height: 20px;
+}
+
+.lang-select ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 150px;
+  display: none;
+}
+
+.lang-select ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lang-select ul li:hover {
+  background: #f3f3f3;
+}
+
+.lang-select ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.lang-select ul.show {
+  display: block;
+}
+/*---navbar---*/
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 16px;
+    list-style: none;
+    position: relative;
+
+}
+
+.menu li a {
+    font-size: 17px;
+    text-decoration: 0;
+    color: #999;
+    position: relative;
+}
+
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #e67e22;
+    transition: 0.5s;
+}
+
+.menu li a:hover::before {
+    width: 100%;
+}
+
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #e67e22;
+    transition: 0.5s;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+.menu li a:hover {
+    color: #000;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  position : absolute;
+  left : 58%;
+  transform : translateX(-50%);
+  max-width: 600px;
+  width: 100%;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.toggle_menu {
+        display: none;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer; 
+    }
+
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #e67e22;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #e67e22;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #e67e22;
+    }
+
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #e67e22;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+    }
+
+/* --- Section Menu --- */
+main {
+  padding: 30px 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  color: #a33;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff3e6;
+  border-top: 2px solid #eee;
+  margin-top: 40px;
+}
+
+
+
+.price {
+  float: right;
+  font-weight: bold;
+}
+#download-btn {
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 50%;
+  margin-right: 50px;
+  transform: translateX(-50%);
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #d94c3f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+#download-btn:hover {
+  background: #b93a30;
+}

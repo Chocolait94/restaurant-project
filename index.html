@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Good - Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="img/都好2.png" alt="All Good Restaurant Logo">
+    <div class="lang-select">
+      <button id="lang-btn">
+        <img src="img/en.png" alt="English"> English
+      </button>
+      <ul id="lang-options" class="hidden">
+        <li data-lang="en"><img src="img/en.png" alt="English"> English</li>
+        <li data-lang="zh"><img src="img/zh.png" alt="中文"> 中文</li>
+        <li data-lang="it"><img src="img/it.png" alt="Italiano"> Italiano</li>
+      </ul>
+      </div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#reservation">Contact</a></li>
+        </ul>
+        <div class="toggle_menu"></div>
+    </div>
+  </header>
+
+  <!-- Section Accueil -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="img/都好.png" alt="Restaurant all-good" class="hero-logo">
+      <h1>都好 • All Good</h1>
+      <!-- Texte EN -->
+      <div class="lang en">
+        <p class="intro">
+          Welcome to our restaurant <strong>都好 (All Good)</strong>!  
+          Here, we invite you to discover the authenticity of Chinese flavors, 
+          revisited with a modern touch.
+        </p>
+        <p class="intro">
+          Whether it's for a family meal, a dinner with friends, or a tasty break, 
+          we celebrate dishes crafted with care, fresh ingredients, 
+          and recipes filled with warmth and conviviality.
+        </p>
+        <p class="intro">
+          Sit back, relax, and enjoy a culinary journey where tradition meets creativity.
+        </p>
+        <a href="#menu" class="btn">🍜 View Menu</a>
+      </div>
+
+      <!-- Texte ZH -->
+      <div class="lang zh" style="display:none;">
+        <p class="intro">
+          欢迎来到我们的餐厅 <strong>都好 (All Good)</strong>！<br>
+          在这里，我们邀请您品尝正宗的中式风味，并融入现代创意。
+        </p>
+        <p class="intro">
+          无论是家庭聚餐、朋友小聚，还是休闲小憩，<br>  
+          我们都为您精心准备新鲜食材与充满温情的美味佳肴。
+        </p>
+        <p class="intro">
+          放松心情，开启一场传统与创新交织的美食之旅。
+        </p>
+        <a href="#menu" class="btn">🍜 查看菜单</a>
+      </div>
+
+      <!-- Texte IT -->
+      <div class="lang it" style="display:none;">
+        <p class="intro">
+          Benvenuti al nostro ristorante <strong>都好 (All Good)</strong>!  
+          Qui vi invitiamo a scoprire l’autenticità dei sapori cinesi, 
+          rivisitati con un tocco moderno.
+        </p>
+        <p class="intro">
+          Che sia un pasto in famiglia, una cena con amici o una pausa golosa,  
+          celebriamo piatti preparati con cura, ingredienti freschi 
+          e ricette che trasmettono calore e convivialità.
+        </p>
+        <p class="intro">
+          Accomodatevi, rilassatevi e lasciatevi trasportare in un viaggio culinario 
+          dove tradizione e creatività si incontrano.
+        </p>
+        <a href="#menu" class="btn">🍜 Vedi il Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Menu -->
+  <main id="menu">
+    <h1 id="title"></h1>
+    <a href="menu.html" id="download-btn">🍜 Menu Image</a>
+
+    <section>
+      <h2 id="house-specials-title"></h2>
+      <ul id="house-specials"></ul>
+    </section>
+
+    <section>
+      <h2 id="meat-dishes-title"></h2>
+      <ul id="meat-dishes"></ul>
+    </section>
+
+    <section>
+      <h2 id="vegetarian-dishes-title"></h2>
+      <ul id="vegetarian-dishes"></ul>
+    </section>
+
+    <section>
+      <h2 id="staples-title"></h2>
+      <ul id="staples"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 All Good Restaurant. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "title": "All Good - Menù",
+  "houseSpecials": {
+    "title": "🍲 Specialità della Casa",
+    "items": [
+      { "name": "Zuppa di pesce con verdura in salsa piccante", "price": "21 €" },
+      { "name": "Zuppa di carne con verdura in salsa piccante", "price": "16 €" },
+      { "name": "Anatra Croccante", "price": "Mezza 10 €, Intera 19 €" }
+    ]
+  },
+  "meatDishes": {
+    "title": "🥩 Piatti di Carne",
+    "items": [
+      { "name": "Gamberi al sale e pepe nero", "price": "9 €" },
+      { "name": "Manzo con peperoncino", "price": "11 €" },
+      { "name": "Puntine di Maiale in salsa agrodolci", "price": "8.5 €" }
+    ]
+  },
+  "vegetarianDishes": {
+    "title": "🥦 Piatti Vegetariani",
+    "items": [
+      { "name": "Tofu Piccante (Mapo Tofu)", "price": "6 €" },
+      { "name": "Tofu secco con verdura sotto aceto", "price": "6 €" },
+      { "name": "Pomodoro saltato con uova", "price": "6 €" }
+    ]
+  },
+  "staples": {
+    "title": "🍚 Piatti Base",
+    "items": [
+      { "name": "Riso bianco", "price": "2 €" },
+      { "name": "Riso cantonese", "price": "6 €" },
+      { "name": "Ravioli di maiale (al vapore o alia griglia)", "price": "6 € / 8 pz" },
+      { "name": "Involtini primavera", "price": "2.5 € / 2 pz, 4 € / 4 pz" }
+    ]
+  }
+}
