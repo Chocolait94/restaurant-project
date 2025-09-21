@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff3e6;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* vidéo en background */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* derrière le contenu */
+  pointer-events: none; /* éviter d'interférer avec les clics */
+}
+
+/* container devant la vidéo */
+.menu-img-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-img-container img {
+  max-width: 85%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #f5d0b5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 18px;
+  background: #d94c3f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.back-link:hover {
+  background: #b93a30;
+}
+
+/* Fullscreen container et scroll si nécessaire */
+.menu-img-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  max-height: 100vh;      
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+
+/* Tablette (768px - 1024px) */
+@media (max-width: 1023px) {
+  .menu-img-container {
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .menu-img-container img {
+    max-width: 100%;
+    height: auto;
+    border-width: 2px;
+    border-radius: 8px;
+  }
+
+  .back-link {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* Smartphone (<768px) */
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  .menu-img-container {
+    padding: 1rem;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .menu-img-container img {
+    max-width: 100%;
+    height: auto;
+    border-width: 1.5px;
+    border-radius: 6px;
+  }
+
+  .back-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  #background-video {
+    object-fit: cover;
+    height: 100%;
+  }
+}

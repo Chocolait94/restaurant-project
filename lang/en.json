@@ -1,0 +1,36 @@
+{
+  "title": "All Good - Menu",
+  "houseSpecials": {
+    "title": "🍲 House Specials",
+    "items": [
+      { "name": "Boiled Fish with Pickled Mustard Greens", "price": "21 €" },
+      { "name": "Sichuan Boiled Beef (spicy)", "price": "16 €" },
+      { "name": "Aromatic Crispy Duck", "price": "half 10 €, whole 19 €" }
+    ]
+  },
+  "meatDishes": {
+    "title": "🥩 Meat Dishes",
+    "items": [
+      { "name": "Salt & Pepper Prawns", "price": "9 €" },
+      { "name": "Sautéed Beef with Green Chili", "price": "11 €" },
+      { "name": "Sweet & Sour Pork Ribs", "price": "8.5 €" }
+    ]
+  },
+  "vegetarianDishes": {
+    "title": "🥦 Vegetarian Dishes",
+    "items": [
+      { "name": "Mapo Tofu (Spicy)", "price": "6 €" },
+      { "name": "Five-Spice Tofu with Pickled Vegetables", "price": "6 €" },
+      { "name": "Scrambled Eggs with Tomatoes", "price": "6 €" }
+    ]
+  },
+  "staples": {
+    "title": "🍚 Staples",
+    "items": [
+      { "name": "Steamed Rice", "price": "2 €" },
+      { "name": "Cantonese Fried Rice", "price": "6 €" },
+      { "name": "Pork Dumplings (Steamed or Pan-fried)", "price": "6 € / 8 pcs" },
+      { "name": "Spring Rolls", "price": "2.5 € / 2 pcs, 4 € / 4 pcs" }
+    ]
+  }
+}
